@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bldku3nuanjny"]
+
+[ext_resource type="Texture2D" uid="uid://bxx522ouciitq" path="res://icon.svg" id="2_dajwl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xrivr"]
+radius = 26.0
+height = 124.0
+
+[node name="rod" type="Node2D" unique_id=323613582]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1314165686]
+collision_layer = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1992904123]
+position = Vector2(0.49999607, 0)
+scale = Vector2(0.3984375, 1)
+texture = ExtResource("2_dajwl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1963874426]
+shape = SubResource("CapsuleShape2D_xrivr")
